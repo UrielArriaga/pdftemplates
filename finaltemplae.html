@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        #pageFooter {
+            font-size: 8px;
+            color: #555;
+        }
+
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        .container_template {
+            max-width: 800px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+            line-height: 12px;
+            font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+            height: 100%;
+            position: relative;
+            font-size: 9px;
+        }
+
+        .container_template .header_pdf {
+            width: 100%;
+        }
+
+        .container_template .header_pdf__logo {
+            padding: 30px;
+        }
+
+        .container_template .header_pdf__rigth {
+            text-align: right;
+            padding: 30px;
+        }
+
+        .container_template .contact_info {
+            width: 100%;
+        }
+
+        .container_template .contact_info__customer {
+            padding: 30px;
+        }
+
+        .container_template .contact_info__executive {
+            text-align: right;
+            padding: 30px;
+        }
+
+        .container_template .products {
+            width: 100%;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .container_template .products__head th,
+        .container_template .products__head {
+            padding: 0px;
+        }
+
+        .container_template .products__head th:nth-child(1) {
+            width: 10%;
+        }
+
+        .container_template .products__head th:nth-child(2) {
+            width: 10%;
+        }
+
+        .container_template .products__head th:nth-child(3) {
+            width: 40%;
+        }
+
+        .container_template .products__head th:nth-child(4) {
+            width: 20%;
+        }
+
+        .container_template .products__head th:nth-child(5) {
+            width: 20%;
+        }
+
+        .container_template .products__body {
+            text-align: center;
+            background-color: white;
+        }
+
+        .container_template svg {
+            position: absolute;
+            bottom: 0;
+            z-index: -1;
+        }
+
+        .header {
+            padding: 10px;
+        }
+
+        .header__table {
+            margin-top: 15px;
+        }
+
+        .header__th {
+            background-color: #1e88e5;
+            color: white;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .header__td {
+            text-align: center;
+            background-color: white;
+        }
+
+        .Data__table {
+            margin-top: 10px;
+        }
+
+        .Data__th {
+            height: 5px;
+            background-color: #1e88e5;
+            color: white;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .Data__td {
+            text-align: center;
+            background-color: white;
+        }
+
+        .padding {
+            padding: 20px;
+        }
+
+
+
+        /*# sourceMappingURL=output.css.map */
+    </style>
+</head>
+
+<body>
+    <div class="container_template">
+        <div id="pageHeader">
+            <table>
+                <tr>
+                    <th>
+                        <img src="https://www.medicalbuy.mx/images/logo-medical.png" />
+                    </th>
+                    <th>
+                        <table style="font-size: 9px; margin-left: 190px; text-align: center">
+                            <tr>
+                                <th style="
+                      background-color: #1e88e5;
+                      color: white;
+                      padding-left: 10px;
+                      padding-right: 10px;
+                    ">
+                                    Número de Cotización
+                                </th>
+                                <th style="
+                      background-color: #1e88e5;
+                      color: white;
+                      padding-left: 10px;
+                      padding-right: 10px;
+                    ">
+                                    Fecha
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>#UAZE01</td>
+                                <td>01/09/22</td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+            </table>
+        </div>
+
+        <h1>Cotización</h1>
+
+        <div class="padding">
+            <table class="Data__table">
+                <thead class="products__head">
+                    <tr class="products__headrow">
+                        <th class="Data__th">Ejecutivo</th>
+                        <th class="Data__th">Correo del Ejecutivo</th>
+                        <th class="Data__th">Teléfono del Ejecutivo</th>
+                    </tr>
+                </thead>
+                <tbody class="products__body">
+                    <tr>
+                        <td style="border: black">Uriel Arriaga</td>
+                        <td class="Data__td">urielarriaga@gmail.com</td>
+                        <td class="Data__td">5512345678</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="padding">
+            <table class="Data__table">
+                <thead class="products__head">
+                    <tr class="products__headrow">
+                        <th class="Data__th">Cliente</th>
+                        <th class="Data__th">Direccion del Cliente</th>
+                    </tr>
+                </thead>
+                <tbody class="products__body">
+                    <tr>
+                        <td class="Data__td">Uriel Arriaga</td>
+                        <td class="Data__td">Estado de mexico</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="padding">
+            <table class="Data__table striped">
+                <thead class="products__head">
+                    <tr class="products__headrow">
+                        <th class="Data__th">Codigo</th>
+                        <th class="Data__th">Marca</th>
+                        <th class="Data__th">Producto</th>
+                        <th class="Data__th">Precio</th>
+                        <th class="Data__th">IVA</th>
+                        <th class="Data__th">SubTotal</th>
+                    </tr>
+                </thead>
+
+                <tbody class="products__body">
+                    <tr>
+                        <td class="Data__td">Buzzcocks</td>
+                        <td class="Data__td">1976</td>
+                        <td class="Data__td">9</td>
+                        <td class="Data__td">10000</td>
+                        <td class="Data__td">1000</td>
+                        <td class="Data__td">1000</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <!-- <table class="products">
+        <thead class="products__head">
+          <tr class="products__headrow">
+            <th scope="col">Codigo</th>
+            <th scope="col">Marca</th>
+            <th scope="col">Producto</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Iva</th>
+            <th scope="col">SubTotal</th>
+          </tr>
+        </thead>
+
+        <tbody class="products__body">
+          <tr>
+            <th scope="row">Buzzcocks</th>
+            <td>1976</td>
+            <td>9</td>
+            <td>1000</td>
+            <td>1000</td>
+            <td>1000</td>
+          </tr>
+        </tbody>
+      </table> -->
+
+        <div id="pageFooter">
+            *Precio sujeto a cambio sin previo aviso *Las existencias de los equipos
+            son salvo venta, una vez confirmado el pedido no se aceptan cambios o
+            devoluciones, *En caso de cancelación solicitarse por escrito y enviarse
+            por correo a su ejecutivo de ventas, se cobrará el 30% del monto total
+            de la compra y el reembolso se realiza 30 días hábiles posteriores a la
+            cancelación. *Cualquier pago deberá ser notificado a su ejecutivo de
+            ventas, es indispensable enviar el comprobante de pago para tramitar el
+            pedido de los equipos solicitados. *Cuando el equipo sea enviado por
+            paqueteria, NO FIRMAR DE RECIBIDO sin antes haber revisado que el equipo
+            este en perfectas condiciones. *Precios en USD O EURO A M.N. en el
+            momento de la compra al tipo de cambio de BBVA BANCOMER a la venta. Los
+            números de guia se daran despues del tercer dia.
+        </div>
+    </div>
+</body>
+
+</html>
